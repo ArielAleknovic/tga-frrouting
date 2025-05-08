@@ -1,0 +1,12 @@
+BGP router identifier 10.0.1.2, local AS number 65001 vrf-id 0
+BGP table version 4
+RIB entries 7, using 1344 bytes of memory
+Peers 3, using 2151 KiB of memory
+
+Neighbor        V         AS   MsgRcvd   MsgSent   TblVer  InQ OutQ  Up/Down State/PfxRcd   PfxSnt Desc
+10.0.1.11       4      65001       186       186        0    0    0 03:01:50            3        2 N/A
+10.0.3.3        4      65001       187       187        0    0    0 03:01:50            2        2 N/A
+10.0.4.4        4      65001       185       185        0    0    0 03:01:20            3        2 N/A
+
+Total number of neighbors 3
+% Can't open configuration file /etc/frr/vtysh.conf due to 'No such file or directory'.

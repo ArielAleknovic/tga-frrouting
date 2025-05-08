@@ -1,0 +1,66 @@
+Area CORE:
+IS-IS Level-2 link-state database:
+LSP ID                  PduLen  SeqNumber   Chksum  Holdtime  ATT/P/OL
+b8420428dfc8.00-00        111   0x0000000d  0x5745     394    0/0/0
+  Protocols Supported: IPv4
+  Area Address: 49.0001
+  Hostname: b8420428dfc8
+  TE Router ID: 10.0.2.11
+  Router Capability: 10.0.2.11 , D:0, S:0
+  Extended Reachability: 0000.0000.0001.ab (Metric: 10)
+  Extended Reachability: 0000.0000.0001.b3 (Metric: 10)
+  IPv4 Interface Address: 10.0.2.11
+  Extended IP Reachability: 10.0.1.0/24 (Metric: 10)
+  Extended IP Reachability: 10.0.2.0/24 (Metric: 10)
+
+b8420428dfc8.ab-00         51   0x0000000c  0xd044     564    0/0/0
+  Extended Reachability: 0000.0000.0001.00 (Metric: 0)
+  Extended Reachability: 0000.0000.0002.00 (Metric: 0)
+
+b8420428dfc8.b3-00         51   0x0000000c  0xac5f     518    0/0/0
+  Extended Reachability: 0000.0000.0001.00 (Metric: 0)
+  Extended Reachability: 0000.0000.0003.00 (Metric: 0)
+
+0d9f6eb04244.00-00   *    111   0x0000000d  0xebce     534    0/0/0
+  Protocols Supported: IPv4
+  Area Address: 49.0001
+  Hostname: 0d9f6eb04244
+  TE Router ID: 10.0.3.2
+  Router Capability: 10.0.3.2 , D:0, S:0
+  Extended Reachability: 0000.0000.0001.ab (Metric: 10)
+  Extended Reachability: 0000.0000.0004.ad (Metric: 10)
+  IPv4 Interface Address: 10.0.3.2
+  Extended IP Reachability: 10.0.1.0/24 (Metric: 10)
+  Extended IP Reachability: 10.0.3.0/24 (Metric: 10)
+
+d60fc4689f36.00-00        111   0x0000000d  0xa4f9     514    0/0/0
+  Protocols Supported: IPv4
+  Area Address: 49.0001
+  Hostname: d60fc4689f36
+  TE Router ID: 10.0.3.3
+  Router Capability: 10.0.3.3 , D:0, S:0
+  Extended Reachability: 0000.0000.0001.b3 (Metric: 10)
+  Extended Reachability: 0000.0000.0004.ad (Metric: 10)
+  IPv4 Interface Address: 10.0.3.3
+  Extended IP Reachability: 10.0.2.0/24 (Metric: 10)
+  Extended IP Reachability: 10.0.3.0/24 (Metric: 10)
+
+dbfb899da323.00-00        100   0x0000000d  0xea1c     554    0/0/0
+  Protocols Supported: IPv4
+  Area Address: 49.0001
+  Hostname: dbfb899da323
+  TE Router ID: 10.0.4.4
+  Router Capability: 10.0.4.4 , D:0, S:0
+  Extended Reachability: 0000.0000.0004.ad (Metric: 10)
+  IPv4 Interface Address: 10.0.4.4
+  Extended IP Reachability: 10.0.3.0/24 (Metric: 10)
+  Extended IP Reachability: 10.0.4.0/24 (Metric: 10)
+
+dbfb899da323.ad-00         62   0x0000000c  0x39c5     530    0/0/0
+  Extended Reachability: 0000.0000.0004.00 (Metric: 0)
+  Extended Reachability: 0000.0000.0003.00 (Metric: 0)
+  Extended Reachability: 0000.0000.0002.00 (Metric: 0)
+
+    7 LSPs
+
+% Can't open configuration file /etc/frr/vtysh.conf due to 'No such file or directory'.

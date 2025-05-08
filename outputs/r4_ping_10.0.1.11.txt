@@ -1,0 +1,9 @@
+PING 10.0.1.11 (10.0.1.11): 56 data bytes
+64 bytes from 10.0.1.11: seq=0 ttl=63 time=0.107 ms
+64 bytes from 10.0.1.11: seq=1 ttl=63 time=0.090 ms
+64 bytes from 10.0.1.11: seq=2 ttl=63 time=0.084 ms
+64 bytes from 10.0.1.11: seq=3 ttl=63 time=0.084 ms
+
+--- 10.0.1.11 ping statistics ---
+4 packets transmitted, 4 packets received, 0% packet loss
+round-trip min/avg/max = 0.084/0.091/0.107 ms

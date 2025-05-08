@@ -1,0 +1,27 @@
+vrf             : default
+Process Id      : 37
+System Id       : 0000.0000.0003
+Up time         : 02:49:34 ago
+Number of areas : 1
+Area CORE:
+  Net: 49.0001.0000.0000.0003.00
+  TX counters per PDU type:
+     L2 IIH: 7145
+     L2 LSP: 100
+    L2 PSNP: 2
+   LSP RXMT: 0
+  RX counters per PDU type:
+     L2 IIH: 17868
+     L2 LSP: 236
+    L2 CSNP: 2258
+    L2 PSNP: 3
+  Level-2:
+    LSP0 regenerated: 13
+         LSPs purged: 0
+    SPF:
+      minimum interval  : 1
+    IPv4 route computation:
+      last run elapsed  : 00:09:48 ago
+      last run duration : 261 usec
+      run count         : 126
+% Can't open configuration file /etc/frr/vtysh.conf due to 'No such file or directory'.

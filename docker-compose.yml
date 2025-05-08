@@ -1,0 +1,80 @@
+version: '3.9'
+
+services:
+  r1:
+    build:
+      context: ./r1
+    container_name: r1
+    privileged: true
+    volumes:
+    - ./r1/frr.conf:/etc/frr/frr.conf
+    - ./r1/daemons:/etc/frr/daemons
+    networks:
+      r1r2:
+        ipv4_address: 10.0.1.11
+      r1r3:
+        ipv4_address: 10.0.2.11
+
+  r2:
+    build:
+      context: ./r2
+    container_name: r2
+    privileged: true
+    volumes:
+    - ./r2/frr.conf:/etc/frr/frr.conf
+    - ./r2/daemons:/etc/frr/daemons
+    networks:
+      r1r2:
+        ipv4_address: 10.0.1.2
+      r2r4:
+        ipv4_address: 10.0.3.2
+
+  r3:
+    build:
+      context: ./r3
+    container_name: r3
+    privileged: true
+    volumes:
+    - ./r3/frr.conf:/etc/frr/frr.conf
+    - ./r3/daemons:/etc/frr/daemons
+    networks:
+      r1r3:
+        ipv4_address: 10.0.2.3
+      r2r4:
+        ipv4_address: 10.0.3.3
+
+  r4:
+    build:
+      context: ./r4
+    container_name: r4
+    privileged: true
+    volumes:
+    - ./r4/frr.conf:/etc/frr/frr.conf
+    - ./r4/daemons:/etc/frr/daemons
+    networks:
+      r2r4:
+        ipv4_address: 10.0.3.4
+      r3r4:
+        ipv4_address: 10.0.4.4
+
+networks:
+  r1r2:
+    driver: bridge
+    ipam:
+      config:
+        - subnet: 10.0.1.0/24
+  r1r3:
+    driver: bridge
+    ipam:
+      config:
+        - subnet: 10.0.2.0/24
+  r2r4:
+    driver: bridge
+    ipam:
+      config:
+        - subnet: 10.0.3.0/24
+  r3r4:
+    driver: bridge
+    ipam:
+      config:
+        - subnet: 10.0.4.0/24
